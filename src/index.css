@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* PDF Video Playlist App - Dark-first design for hands-free video viewing */
+
+@layer base {
+  :root {
+    --background: 220 20% 97%;
+    --foreground: 220 25% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 10%;
+
+    --primary: 262 83% 58%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 14% 92%;
+    --secondary-foreground: 220 25% 10%;
+
+    --muted: 220 14% 92%;
+    --muted-foreground: 220 10% 45%;
+
+    --accent: 262 83% 95%;
+    --accent-foreground: 262 83% 40%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 14% 88%;
+    --input: 220 14% 88%;
+    --ring: 262 83% 58%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens for the app */
+    --player-bg: 220 20% 8%;
+    --player-foreground: 220 14% 95%;
+    --favorite: 45 93% 58%;
+    --success: 142 71% 45%;
+    --chapter: 220 14% 96%;
+    --chapter-foreground: 220 25% 10%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 220 25% 20%;
+    --sidebar-primary: 262 83% 58%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 262 83% 95%;
+    --sidebar-accent-foreground: 262 83% 40%;
+    --sidebar-border: 220 14% 90%;
+    --sidebar-ring: 262 83% 58%;
+  }
+
+  .dark {
+    --background: 220 20% 8%;
+    --foreground: 220 14% 95%;
+
+    --card: 220 20% 12%;
+    --card-foreground: 220 14% 95%;
+
+    --popover: 220 20% 12%;
+    --popover-foreground: 220 14% 95%;
+
+    --primary: 262 83% 65%;
+    --primary-foreground: 220 20% 8%;
+
+    --secondary: 220 20% 18%;
+    --secondary-foreground: 220 14% 95%;
+
+    --muted: 220 20% 18%;
+    --muted-foreground: 220 14% 60%;
+
+    --accent: 262 50% 25%;
+    --accent-foreground: 262 83% 80%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 20% 20%;
+    --input: 220 20% 20%;
+    --ring: 262 83% 65%;
+
+    /* Custom tokens for the app */
+    --player-bg: 220 25% 5%;
+    --player-foreground: 220 14% 95%;
+    --favorite: 45 93% 58%;
+    --success: 142 71% 45%;
+    --chapter: 220 20% 15%;
+    --chapter-foreground: 220 14% 95%;
+
+    --sidebar-background: 220 20% 10%;
+    --sidebar-foreground: 220 14% 90%;
+    --sidebar-primary: 262 83% 65%;
+    --sidebar-primary-foreground: 220 20% 8%;
+    --sidebar-accent: 262 50% 25%;
+    --sidebar-accent-foreground: 262 83% 80%;
+    --sidebar-border: 220 20% 18%;
+    --sidebar-ring: 262 83% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--muted-foreground) / 0.3) transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: hsl(var(--muted-foreground) / 0.3);
+    border-radius: 3px;
+  }
+}
