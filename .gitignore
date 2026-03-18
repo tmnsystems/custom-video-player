@@ -24,3 +24,20 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+.vercel
+.claude/
+
+
+# Privacy and Security Exclusions
+Esther's Journey/
+AgapeSetup/
+Strategic_Client_Assistant/
+SOUL.md
+CONSTITUTION.md
+AGENT_START.md
+00_THE_TRUTH.md
+00_VALUES_AND_STANDARDS.md
+.env
+*/.env
+.DS_Store
+\n# Ultimate Transcript Ban\n*.vtt\n*transcript*\n*Transcript*\n*Agape*\n*Esther*\nall_transcripts/\nduplicates_archive/\nextraction_outputs/\n\n# Nuclear Personal Data Ban\n*.vtt\n*.zip\n*.json*\nall_transcripts/\nduplicates_archive/\nextraction_outputs/\nmeeting-notes/\ntraining-extracts/\ntraining_data/\ntranscripts/\nEsther's Journey/\nAgapeSetup/\nStrategic_Client_Assistant/\n*extract*.md\n*extract*.txt\n*extract*.csv\n*extract*.json\n*transcript*.md\n*transcript*.txt\n*transcript*.csv\n*transcript*.json\n*agape*.md\n*agape*.txt\n*agape*.csv\n*agape*.json\n*esther*.md\n*esther*.txt\n*esther*.csv\n*esther*.json\n*personal*.md\n*personal*.txt\n*personal*.csv\n*personal*.json\n*tina*.md\n*tina*.txt\n*tina*.csv\n*tina*.json\n
